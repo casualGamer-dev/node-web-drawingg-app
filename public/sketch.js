@@ -10,7 +10,7 @@ function setup() {
 	cv.background(255, 255, 255)
 
 	// Start the socket connection
-	socket = io.connect('https://webdrawnode.herokuapp.com:process.env.PORT/socket.io/?EIO=4&transport=websocket')
+	socket = io.connect(process.env.PORT,process.env.IP);
 
 	// Callback function
 	socket.on('mouse', data => {
