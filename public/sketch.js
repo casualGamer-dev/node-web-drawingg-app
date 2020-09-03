@@ -10,7 +10,7 @@ function setup() {
 	cv.background(255, 255, 255)
 
 	// Start the socket connection
-	socket = io.connect(process.env.PORT,process.env.IP);
+		socket = io.connect('http://localhost:process.env.PORT')
 
 	// Callback function
 	socket.on('mouse', data => {
