@@ -55,5 +55,5 @@ io.sockets.on('connection', (socket) => {
 
 	socket.on('disconnect', () => console.log('Client has disconnected'))
 })
-
+setInterval(() => io.emit('time', new Date().toTimeString()), 1000);
 server.listen(port)
