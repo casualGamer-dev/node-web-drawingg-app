@@ -10,7 +10,7 @@ function setup() {
 	cv.background(255, 255, 255)
 
 	// Start the socket connection
-	socket = io.connect('http://localhost:3000')
+	socket = io.connect('https://webdrawnode.herokuapp.com/')
 
 	// Callback function
 	socket.on('mouse', data => {
